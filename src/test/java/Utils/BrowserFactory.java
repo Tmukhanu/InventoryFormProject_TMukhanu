@@ -10,15 +10,20 @@ public class BrowserFactory {
     static WebDriver driver;
 
     public static WebDriver launchBrowser(String browserChoice, String url) {
-        if (browserChoice.equalsIgnoreCase("chrome")){
+        if (browserChoice.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             driver = new ChromeDriver(options);
-    }else if (browserChoice.equalsIgnoreCase("edge")){
+        } else if (browserChoice.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
-        }else{
+        } else {
             driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
         driver.get(url);
         return driver;
+    }
+    public void testBrowser(){
+        launchBrowser("chrome","https://ndosisimplifiedautomation.vercel.app/#dashboard");
+
+    }
 }
