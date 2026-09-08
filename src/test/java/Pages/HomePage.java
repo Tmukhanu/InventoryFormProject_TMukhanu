@@ -14,4 +14,9 @@ public class HomePage {
         this.driver = driver;
     }
 
+    public void clickLoginButton() {
+        loginButton.click();
+    }
+
+
 }
