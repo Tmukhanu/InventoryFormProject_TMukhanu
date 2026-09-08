@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class BrowserFactory {
     static WebDriver driver;
@@ -12,6 +13,7 @@ public class BrowserFactory {
     public static WebDriver launchBrowser(String browserChoice, String url) {
         if (browserChoice.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
+           // options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browserChoice.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
@@ -21,9 +23,7 @@ public class BrowserFactory {
         driver.manage().window().maximize();
         driver.get(url);
         return driver;
-    }
-    public void testBrowser(){
-        launchBrowser("chrome","https://ndosisimplifiedautomation.vercel.app/#dashboard");
+
 
     }
 }
