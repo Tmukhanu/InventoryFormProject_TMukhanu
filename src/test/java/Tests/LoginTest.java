@@ -12,5 +12,6 @@ public class LoginTest extends Base {
 
     @Test
     public void EnterUserName() {
+        loginPage.enterUsername("mukhanu2@gmail.com");
     }
 }
