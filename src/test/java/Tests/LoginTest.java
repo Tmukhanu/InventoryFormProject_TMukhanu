@@ -14,4 +14,15 @@ public class LoginTest extends Base {
     public void EnterUserName() {
         loginPage.enterUsername("mukhanu2@gmail.com");
     }
+
+    @Test
+    public void EnterPassword() {
+        loginPage.enterPassword("@123456789");
+    }
+}
+
+@Test
+public void ClickLoginSubmitButton() {
+    loginPage.clickLoginSubmitButton();
+}
 }
