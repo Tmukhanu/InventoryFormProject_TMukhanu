@@ -1,6 +1,7 @@
 package Tests;
 
 import Pages.HomePage;
+import Pages.LandingPage;
 import Pages.LoginPage;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,11 @@ public class LoginTest extends Base {
     @Test(priority = 3)
     public void ClickLoginSubmitButton() {
         loginPage.ClickLoginSubmitButton();
+    }
+    @Test(priority = 4)
+    public void verifyLoginSuccess() {
+        landingPage.verifyLoginSuccess();
+
     }
 }
 
