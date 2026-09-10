@@ -25,12 +25,13 @@ public class LoginPage {
         passwordField.sendKeys(password);
 
     }
-
     @FindBy(id = "login-submit")
     WebElement loginSubmitButton;
 
-    public void clickLoginSubmitButton() {
+    public void ClickLoginSubmitButton(){
         loginSubmitButton.click();
     }
 }
+
+
 
