@@ -28,16 +28,21 @@ public class LoginTest extends Base {
     public void verifyLoginSuccess() {
         landingPage.verifyLoginSuccess();
     }
-    @Test(priority = 5)
-        public void ClickLearnButton () {
-           inventoryForm.ClickLearnButton();
 
+    @Test(priority = 5)
+    public void ClickLearnButton() {
+        inventoryForm.ClickLearnButton();
     }
-@Test(priority = 6)
-    public void ClickLearningMaterialsButton(){
+
+    @Test(priority = 6)
+    public void ClickLearningMaterialsButton() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.ClickLearningMaterialsButton();
     }
-
+    @Test(priority = 7)
+public void ClickWebAutomationAdvanceButton() {
+        inventoryForm.ClickWebAutomationAdvanceButton();
+    }
 }
 
 

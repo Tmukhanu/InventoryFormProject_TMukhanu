@@ -1,7 +1,7 @@
 package Tests;
 
 import Pages.HomePage;
-import Pages.InventoryForm;
+import Pages.GoToInventoryPage;
 import Pages.LandingPage;
 import Pages.LoginPage;
 import Utils.BrowserFactory;
@@ -15,6 +15,6 @@ public class Base {
     public HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     public LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     public LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
-    public InventoryForm inventoryForm = PageFactory.initElements(driver, InventoryForm.class);
+    public GoToInventoryPage inventoryForm = PageFactory.initElements(driver, GoToInventoryPage.class);
 }
 
