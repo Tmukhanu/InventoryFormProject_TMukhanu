@@ -37,4 +37,20 @@ public class GoToInventoryPage {
         Select_device.selectByVisibleText("Phone");
 
     }
+    public void SelectBrand() {
+        WebElement dropdown_element = driver.findElement(By.id("brand"));
+        Select Select_brand = new Select(dropdown_element);
+        Select_brand.selectByVisibleText("Apple");
+    }
+    public void SelectStorage(){
+        WebElement StorageRadioButton = driver.findElement(By.xpath("//span[text()='128GB']"));
+        StorageRadioButton.click();
+    }
+    public void SelectColor(){
+        WebElement dropdown_element = driver.findElement(By.id("color"));
+        Select Select_color = new Select(dropdown_element);
+        Select_color.selectByVisibleText("Blue");
+    }
 }
+
+

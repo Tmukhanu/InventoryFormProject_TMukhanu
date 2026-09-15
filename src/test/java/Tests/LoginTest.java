@@ -39,17 +39,29 @@ public class LoginTest extends Base {
         Thread.sleep(2000);
         inventoryForm.ClickLearningMaterialsButton();
     }
+
     @Test(priority = 7)
-public void ClickWebAutomationAdvanceButton() {
+    public void ClickWebAutomationAdvanceButton() {
         inventoryForm.ClickWebAutomationAdvanceButton();
+
     }
-//    @Test(priority = 8)
-//    public void ClickDeviceTypeDropDown() {
-//        inventoryForm.ClickDeviceTypeDropDown();
-//    }
+
     @Test(priority = 8)
     public void SelectDeviceType() {
         inventoryForm.SelectDeviceType();
+    }
+
+    @Test(priority = 9)
+    public void SelectBrand() {
+        inventoryForm.SelectBrand();
+    }
+    @Test(priority = 10)
+    public void SelectStorage() {
+        inventoryForm.SelectStorage();
+    }
+    @Test(priority = 11)
+    public void SelectColor(){
+        inventoryForm.SelectColor();
     }
 }
 
