@@ -43,6 +43,14 @@ public class LoginTest extends Base {
 public void ClickWebAutomationAdvanceButton() {
         inventoryForm.ClickWebAutomationAdvanceButton();
     }
+//    @Test(priority = 8)
+//    public void ClickDeviceTypeDropDown() {
+//        inventoryForm.ClickDeviceTypeDropDown();
+//    }
+    @Test(priority = 8)
+    public void SelectDeviceType() {
+        inventoryForm.SelectDeviceType();
+    }
 }
 
 
