@@ -96,6 +96,18 @@ public class GoToInventoryPage {
         WebElement ConfirmPurchaseButton = driver.findElement(By.id("add-to-cart-btn"));
         ConfirmPurchaseButton.click();
     }
+public void ReviewCart() {
+        WebElement ReviewCartButton = driver.findElement(By.id("review-cart-btn"));
+        ReviewCartButton.click();
+    }
+    public void PlaceOrder() {
+        WebElement PlaceOrderButton = driver.findElement(By.id("confirm-cart-btn"));
+        PlaceOrderButton.click();
+    }
+    public void ViewInvoiceDetails() {
+        WebElement ViewInvoiceButton = driver.findElement(By.id("view-history-btn"));
+        ViewInvoiceButton.click();
+    }
 
 }
 
