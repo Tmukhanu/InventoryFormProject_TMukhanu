@@ -37,44 +37,64 @@ public class GoToInventoryPage {
         Select_device.selectByVisibleText("Phone");
 
     }
+
     public void SelectBrand() {
         WebElement dropdown_element = driver.findElement(By.id("brand"));
         Select Select_brand = new Select(dropdown_element);
         Select_brand.selectByVisibleText("Apple");
     }
-    public void SelectStorage(){
+
+    public void SelectStorage() {
         WebElement StorageRadioButton = driver.findElement(By.xpath("//span[text()='128GB']"));
         StorageRadioButton.click();
     }
-    public void SelectColor(){
+
+    public void SelectColor() {
         WebElement dropdown_element = driver.findElement(By.id("color"));
         Select Select_color = new Select(dropdown_element);
         Select_color.selectByVisibleText("Blue");
     }
-    public void SelectQuantity(){
+
+    public void SelectQuantity() {
         WebElement NumberInput = driver.findElement(By.id("quantity"));
         NumberInput.clear();
         NumberInput.sendKeys("2");
     }
-    public void EnterAddress(){
+
+    public void EnterAddress() {
         WebElement AddressInputBox = driver.findElement(By.id("address"));
         AddressInputBox.sendKeys("123 Test Street");
     }
-    public void ClickNextButton(){
+
+    public void ClickNextButton() {
         WebElement NextButton = driver.findElement(By.id("inventory-next-btn"));
         NextButton.click();
     }
-public void SelectShippingMethod(){
+
+    public void SelectShippingMethod() {
         WebElement ShippingMethodRadioButton = driver.findElement(By.id("shipping-option-express"));
         ShippingMethodRadioButton.click();
     }
-    public void WarrantyOption(){
+
+    public void WarrantyOption() {
         WebElement WarrantyOptionRadioButton = driver.findElement(By.id("warranty-option-1yr"));
         WarrantyOptionRadioButton.click();
     }
-    public void EnterDiscountCode(){
+
+    public void EnterDiscountCode() {
         WebElement DiscountCodeInputBox = driver.findElement(By.id("discount-code"));
         DiscountCodeInputBox.sendKeys("SAVE10");
+    }
+
+    public void ClickApplyDiscountButton() {
+        WebElement ApplyDiscountButton = driver.findElement(By.id("apply-discount-btn"));
+        ApplyDiscountButton.click();
+
+    }
+
+    public void ClickConfirmPurchaseButton() {
+        WebElement ConfirmPurchaseButton = driver.findElement(By.id("add-to-cart-btn"));
+        ConfirmPurchaseButton.click();
     }
 
 }

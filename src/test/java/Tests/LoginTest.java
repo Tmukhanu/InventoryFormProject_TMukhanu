@@ -98,6 +98,18 @@ public void WarrantyOption() throws InterruptedException {
         Thread.sleep(2000);
         inventoryForm.EnterDiscountCode();
     }
+
+    @Test(priority = 18)
+    public void ClickApplyDiscountButton() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.ClickApplyDiscountButton();
+    }
+
+    @Test(priority = 19)
+    public void ClickConfirmPurchaseButton() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.ClickConfirmPurchaseButton();
+    }
 }
 
 
