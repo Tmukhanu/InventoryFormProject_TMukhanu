@@ -64,7 +64,10 @@ public class GoToInventoryPage {
         WebElement NextButton = driver.findElement(By.id("inventory-next-btn"));
         NextButton.click();
     }
-
+public void SelectShippingMethod(){
+        WebElement ShippingMethodRadioButton = driver.findElement(By.id("shipping-option-express"));
+        ShippingMethodRadioButton.click();
+    }
 }
 
 

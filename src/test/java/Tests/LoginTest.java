@@ -83,6 +83,12 @@ public class LoginTest extends Base {
         Thread.sleep(2000);
         inventoryForm.ClickNextButton();
     }
+    @Test(priority = 15)
+    public void SelectShippingMethod() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.SelectShippingMethod();
+    }
+
 }
 
 
