@@ -108,7 +108,12 @@ public void ReviewCart() {
         WebElement ViewInvoiceButton = driver.findElement(By.id("view-history-btn"));
         ViewInvoiceButton.click();
     }
-
+public void ViewInvoiceHistory() {
+    WebElement viewHistoryButton = driver.findElement(
+            By.cssSelector("[id*='view-invoice']")
+    );
+    viewHistoryButton.click();
+    }
 }
 
 

@@ -132,6 +132,10 @@ public class LoginTest extends Base {
         Thread.sleep(5000);
         inventoryForm.ViewInvoiceDetails();
     }
+    @Test(priority = 23)
+    public void ViewInvoiceHistory(){
+       inventoryForm.ViewInvoiceHistory();
+    }
 }
 
 
