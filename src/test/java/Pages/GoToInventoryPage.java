@@ -51,6 +51,20 @@ public class GoToInventoryPage {
         Select Select_color = new Select(dropdown_element);
         Select_color.selectByVisibleText("Blue");
     }
+    public void SelectQuantity(){
+        WebElement NumberInput = driver.findElement(By.id("quantity"));
+        NumberInput.clear();
+        NumberInput.sendKeys("2");
+    }
+    public void EnterAddress(){
+        WebElement AddressInputBox = driver.findElement(By.id("address"));
+        AddressInputBox.sendKeys("123 Test Street");
+    }
+    public void ClickNextButton(){
+        WebElement NextButton = driver.findElement(By.id("inventory-next-btn"));
+        NextButton.click();
+    }
+
 }
 
 

@@ -41,27 +41,47 @@ public class LoginTest extends Base {
     }
 
     @Test(priority = 7)
-    public void ClickWebAutomationAdvanceButton() {
+    public void ClickWebAutomationAdvanceButton() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.ClickWebAutomationAdvanceButton();
 
     }
 
     @Test(priority = 8)
-    public void SelectDeviceType() {
+    public void SelectDeviceType() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.SelectDeviceType();
     }
 
     @Test(priority = 9)
-    public void SelectBrand() {
+    public void SelectBrand() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.SelectBrand();
     }
     @Test(priority = 10)
-    public void SelectStorage() {
+    public void SelectStorage() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.SelectStorage();
     }
     @Test(priority = 11)
-    public void SelectColor(){
+    public void SelectColor() throws InterruptedException {
+        Thread.sleep(2000);
         inventoryForm.SelectColor();
+    }
+    @Test(priority = 12)
+    public void SelectQuantity() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.SelectQuantity();
+    }
+    @Test(priority = 13)
+    public void EnterAddress() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.EnterAddress();
+    }
+    @Test(priority = 14)
+    public void ClickNextButton() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.ClickNextButton();
     }
 }
 
