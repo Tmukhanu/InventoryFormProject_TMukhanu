@@ -68,6 +68,15 @@ public void SelectShippingMethod(){
         WebElement ShippingMethodRadioButton = driver.findElement(By.id("shipping-option-express"));
         ShippingMethodRadioButton.click();
     }
+    public void WarrantyOption(){
+        WebElement WarrantyOptionRadioButton = driver.findElement(By.id("warranty-option-1yr"));
+        WarrantyOptionRadioButton.click();
+    }
+    public void EnterDiscountCode(){
+        WebElement DiscountCodeInputBox = driver.findElement(By.id("discount-code"));
+        DiscountCodeInputBox.sendKeys("SAVE10");
+    }
+
 }
 
 

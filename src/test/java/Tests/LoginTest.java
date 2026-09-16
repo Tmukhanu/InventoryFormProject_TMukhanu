@@ -88,7 +88,16 @@ public class LoginTest extends Base {
         Thread.sleep(2000);
         inventoryForm.SelectShippingMethod();
     }
-
+    @Test(priority = 16)
+public void WarrantyOption() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.WarrantyOption();
+    }
+    @Test(priority = 17)
+    public void EnterDiscountCode() throws InterruptedException {
+        Thread.sleep(2000);
+        inventoryForm.EnterDiscountCode();
+    }
 }
 
 
